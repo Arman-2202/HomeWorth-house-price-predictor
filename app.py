@@ -61,6 +61,18 @@ def show(fig):
 
 CSS = """
 <style>
+/* Make form labels dark and clearly visible */
+.stNumberInput label,
+.stSelectbox label,
+.stTextInput label,
+.stSlider label,
+.stRadio label,
+.stMultiSelect label {
+    color: #0B1F3A !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    opacity: 1 !important;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
 html, body, [class*="css"] { font-family: 'Inter', 'Segoe UI', sans-serif; }
 .block-container { padding-top: 1.1rem; padding-bottom: 2rem; max-width: 1280px; }
