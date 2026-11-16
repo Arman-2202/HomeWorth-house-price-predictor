@@ -1,0 +1,88 @@
+{
+  "sklearn_version": "1.9.1",
+  "n_train": 22400,
+  "n_test": 5600,
+  "n_cities": 16,
+  "n_localities": 154,
+  "final": {
+    "r2": 0.9723181421749586,
+    "mae_lakh": 18.52188177263329,
+    "mape_pct": 8.722903226413228,
+    "median_ape_pct": 7.295050621514701,
+    "within_10_pct": 63.80357142857142,
+    "within_15_pct": 82.91071428571428
+  },
+  "interval_log": [
+    -0.140608846236056,
+    0.13973958480007553
+  ],
+  "comparison": [
+    {
+      "model": "Linear Regression (Ridge)",
+      "r2": 0.7939812319519948,
+      "mae_lakh": 42.64768322064035,
+      "mape_pct": 18.058219136767086,
+      "median_ape_pct": 14.508812093181925,
+      "within_10_pct": 35.0,
+      "within_15_pct": 51.357142857142854
+    },
+    {
+      "model": "Random Forest",
+      "r2": 0.963409272229135,
+      "mae_lakh": 20.61272401894079,
+      "mape_pct": 9.558338393813964,
+      "median_ape_pct": 7.953040842751144,
+      "within_10_pct": 60.14285714285714,
+      "within_15_pct": 79.51785714285714
+    },
+    {
+      "model": "Gradient Boosting (final)",
+      "r2": 0.9723181421749586,
+      "mae_lakh": 18.52188177263329,
+      "mape_pct": 8.722903226413228,
+      "median_ape_pct": 7.295050621514701,
+      "within_10_pct": 63.80357142857142,
+      "within_15_pct": 82.91071428571428
+    }
+  ],
+  "importance": {
+    "Locality benchmark rate": 55.62,
+    "Built-up area": 36.34,
+    "Age of property": 2.7,
+    "Property type": 1.84,
+    "Construction status": 0.71,
+    "Floor number": 0.52,
+    "BHK": 0.51,
+    "Distance to metro / transit": 0.44,
+    "Furnishing": 0.3,
+    "Car parking": 0.29,
+    "Amenities (all)": 0.25,
+    "RERA registered": 0.12,
+    "Facing direction": 0.11,
+    "City": 0.06,
+    "Schools / hospitals nearby": 0.06,
+    "Bathrooms": 0.06,
+    "Building height": 0.05,
+    "Balconies": 0.01,
+    "Modular kitchen": 0.0
+  },
+  "mape_by_city": {
+    "Ahmedabad": 8.93,
+    "Bengaluru": 8.89,
+    "Chandigarh": 8.27,
+    "Chennai": 8.05,
+    "Delhi": 8.64,
+    "Gurugram": 8.78,
+    "Hyderabad": 9.02,
+    "Indore": 9.1,
+    "Jaipur": 8.65,
+    "Kochi": 7.9,
+    "Kolkata": 8.74,
+    "Lucknow": 8.49,
+    "Mohali": 9.7,
+    "Mumbai": 8.76,
+    "Noida": 8.79,
+    "Pune": 8.55
+  },
+  "trained_seconds": 9.7
+}
